@@ -1,5 +1,6 @@
 import React from 'react'
-import quiz from '../assets/quiz.jpg'
+
+
 function Events() {
   return (
     <div className=" flex-col flex-wrap justify-center items-center">
