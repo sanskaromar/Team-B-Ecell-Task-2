@@ -1,6 +1,6 @@
-* Put your React App in this folder.
 
-* Make sure to add link to your figma design in the README.md file
+* Design of the website.
+* figma link -https://www.figma.com/file/k8VQQ2bJH6TGKBBkYiZXeR/Untitled?node-id=0%3A1&t=uXt8F6uEf9liv2wb-1
 
 * Make sure to add link to your live app in the README.md file
 
