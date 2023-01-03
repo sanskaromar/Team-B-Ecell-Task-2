@@ -1,0 +1,13 @@
+.hex {
+    width: 200px;
+    display: inline-block;
+    color:orange;
+  }
+
+.hex::before {
+    content: "";
+    display: block;
+    background:currentColor;
+    padding-top: 90%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
