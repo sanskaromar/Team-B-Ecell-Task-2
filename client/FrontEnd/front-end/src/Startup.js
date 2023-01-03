@@ -11,12 +11,26 @@ const Startup = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
+        responsive:[
+          {
+            breakpoint: 730,
+            settings:{
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 400,
+            settings:{
+              slidesToShow: 1,
+            }
+          }
+        ]
     };
     return (
         <div className="bg-black h-[250px] pt-[10px]">
             <div className="justify-center items-center">
-                <h1 className="text-white font-serif text-4xl bold justify-center items-center flex">Startups by MNNITians</h1>
+                <h1 className="text-white font-serif text-4xl bold justify-center items-center flex max-md:text-2xl">Startups by MNNITians</h1>
             </div>
             <Carousel className="w-[100%] flex justify-center items-center" {...settings}>
                 <Wrap>
