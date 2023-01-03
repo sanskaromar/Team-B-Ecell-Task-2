@@ -1,5 +1,4 @@
 import React from "react";
-import './TokenCSS.css';
 
 export default function EventsToken(prop) {
 
