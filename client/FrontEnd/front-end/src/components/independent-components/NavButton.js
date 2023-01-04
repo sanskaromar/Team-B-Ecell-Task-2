@@ -9,19 +9,19 @@ export default function NavButton(prop) {
     return (
         prop.isDown ? 
         <>
-            <button className="px-4 py-4 text-white border-b-2 border-transparent hover:border-white"
+            <div className="px-4 py-4 text-white border-b-2 border-transparent hover:border-white cursor-pointer"
                     style={navButtonStyle}
             >
                 {prop.name}
-            </button>
+            </div>
         </>
         :
         <>
-            <button className="px-4 py-4 text-white border-b-2 border-transparent hover:border-white hidden sm:block"
+            <div className="px-4 py-4 text-white border-b-2 border-transparent hover:border-white hidden sm:block cursor-pointer"
                     style={navButtonStyle}
             >
                 {prop.name}
-            </button>
+            </div>
         </>
     );
 }

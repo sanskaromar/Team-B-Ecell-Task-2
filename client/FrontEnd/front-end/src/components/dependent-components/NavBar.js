@@ -42,10 +42,10 @@ export default function NavBar(prop) {
 
                 <div className="flex flex-col sm:flex-row " style={NavDownStyle}>
                 {/* A div that contains the navigation buttons */}
-                    <button className="px-4 py-4 flex flex-row justify-end sm:hidden text-white border-b-2 border-transparent"  onClick={ToggleNavBar}
+                    <div className="px-4 py-4 flex flex-row justify-end sm:hidden text-white border-b-2 border-transparent cursor-pointer"  onClick={ToggleNavBar}
                     >
                         close
-                    </button>
+                    </div>
                     <NavButton name="Home" isDown={NavisDown} />
                     <NavButton name="Events" isDown={NavisDown}  />
                     <NavButton name="Startups" isDown={NavisDown}  />
@@ -69,10 +69,10 @@ export default function NavBar(prop) {
                 <div className="flex h-12 flex-col sm:flex-row ">
                 {/* A div that contains the navigation buttons */}
                     {/* <BurgerButton ToggleButton={ToggleNav} ToggleValue={NavisDown}  onclick={ToggleNavBar}/> */}
-                    <button className="px-4 py-4 flex flex-row justify-end sm:hidden"  onClick={ToggleNavBar}
+                    <div className="px-4 py-4 flex flex-row justify-end sm:hidden cursor-pointer"  onClick={ToggleNavBar}
                     >
                         <img src={burgerIcon} className="h-8 w-8"/>
-                    </button>
+                    </div>
                     <NavButton name="Home" isDown={NavisDown} />
                     <NavButton name="Events" isDown={NavisDown}  />
                     <NavButton name="Startups" isDown={NavisDown}  />
