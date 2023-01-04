@@ -11,11 +11,12 @@ import AboutUs from './components/dependent-components/AboutUs';
 
 
 function App() {
+
   return (
-    <>
+    <div>
       <Header background={bulbImage} />
       <AboutUs />
-    </>
+    </div>
   );
 }
 

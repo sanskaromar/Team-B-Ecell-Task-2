@@ -12,7 +12,8 @@ export default function AboutUs(prop) {
         'display' : 'flex',
         'flexDirection' : 'column',
         'justifyContent' : 'space-evenly',
-        'alignItem' : 'center'
+        'alignItem' : 'center',
+        'padding' : '10vh'
     }
 
     return (

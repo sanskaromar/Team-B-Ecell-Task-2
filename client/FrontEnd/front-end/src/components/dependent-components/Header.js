@@ -20,10 +20,11 @@ export default function Header(prop) {
         'paddingBottom' : '66.66%'
     }
 
+
     return (
         <>
             <NavBar />
-            <div className=" px-12 sm:px-32 sm:py-12 md:p-32 lg:p-56 xl:p-56 xl:m-20">
+            <div className=" px-12 py-12 sm:px-32 sm:py-24 md:p-40 lg:p-56 xl:p-56 xl:m-20">
             {/* <div style={ContStuleHeader} className="px-12 sm:px-32"> */}
                 <h1 style={textStyle}>
                     ECELL MNNIT
