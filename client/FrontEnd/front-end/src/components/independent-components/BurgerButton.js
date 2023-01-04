@@ -1,7 +1,7 @@
 import React from "react";
 import burgerIcon from "../../assets/burgerIcon.png";
 
-export default function Header(prop) {
+export default function BurgerButton(prop) {
 
     const runToggleNav = () =>{
         prop.ToggleNav( !prop.NavisDown);

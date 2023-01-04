@@ -1,13 +1,12 @@
 import React from "react";
 import ecelllogo from "../../assets/ECellLogo.png";
 import NavButton from "../independent-components/NavButton";
-import BurgerButton from "../independent-components/BurgerButton";
 import burgerIcon from "../../assets/burgerIcon.png";
 
 
 import { useState } from "react";
 
-export default function Header(prop) {
+export default function NavBar(prop) {
 
     const [ NavisDown, ToggleNav] = useState( false);
 
