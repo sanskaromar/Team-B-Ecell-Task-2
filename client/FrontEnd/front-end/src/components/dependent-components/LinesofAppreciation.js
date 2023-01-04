@@ -21,7 +21,7 @@ const LinesofAppreciation = () => {
         autoplay: true,
     };
     return (
-        <div className='BackGround p-4'>
+        <div className='BackGround p-4 pb-8'>
             <div
                 className="bg-[#F9F3EB] h-[450px] pt-[10px] max-md:h-[550px]">
                 <div

@@ -10,6 +10,7 @@ import Info from './components/independent-components/Info'
 import EventsToken from './components/independent-components/EventsToken';
 import AboutUs from './components/dependent-components/AboutUs';
 import LinesofAppreciation from './components/dependent-components/LinesofAppreciation';
+import ContactUs from './components/independent-components/ContactUs';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Events />
       <Startup />
       <LinesofAppreciation />
+      <ContactUs />
     </div>
   );
 }
