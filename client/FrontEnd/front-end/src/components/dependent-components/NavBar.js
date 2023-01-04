@@ -2,6 +2,8 @@ import React from "react";
 import ecelllogo from "../../assets/ECellLogo.png";
 import NavButton from "../independent-components/NavButton";
 import BurgerButton from "../independent-components/BurgerButton";
+import burgerIcon from "../../assets/burgerIcon.png";
+
 
 import { useState } from "react";
 
@@ -13,8 +15,18 @@ export default function Header(prop) {
         'height' : '100px'
     }
 
-    const havBtnCont = {
+    const ToggleNavBar = () => {
+        ToggleNav( !NavisDown);
+        console.log( "Toggles");
+        console.log( NavisDown);
+    }
 
+    const NavDownStyle = {
+        'backgroundColor' : 'rgba(255, 255, 255, .15)',  
+        'backdropFilter' : 'blur(5px)',
+        'position' : 'fixed',
+        'right' : '0',
+        'top' : '0'
     }
 
     
@@ -29,9 +41,12 @@ export default function Header(prop) {
                 </div>
 
 
-                <div className="flex h-12 flex-col sm:flex-row ">
+                <div className="flex flex-col sm:flex-row " style={NavDownStyle}>
                 {/* A div that contains the navigation buttons */}
-                    
+                    <button className="px-4 py-4 flex flex-row justify-end sm:hidden text-white border-b-2 border-transparent"  onClick={ToggleNavBar}
+                    >
+                        close
+                    </button>
                     <NavButton name="Home" isDown={NavisDown} />
                     <NavButton name="Events" isDown={NavisDown}  />
                     <NavButton name="Startups" isDown={NavisDown}  />
@@ -54,7 +69,11 @@ export default function Header(prop) {
 
                 <div className="flex h-12 flex-col sm:flex-row ">
                 {/* A div that contains the navigation buttons */}
-                    <BurgerButton ToggleButton={ToggleNav} ToggleValue={NavisDown}/>
+                    {/* <BurgerButton ToggleButton={ToggleNav} ToggleValue={NavisDown}  onclick={ToggleNavBar}/> */}
+                    <button className="px-4 py-4 flex flex-row justify-end sm:hidden"  onClick={ToggleNavBar}
+                    >
+                        <img src={burgerIcon} className="h-8 w-8"/>
+                    </button>
                     <NavButton name="Home" isDown={NavisDown} />
                     <NavButton name="Events" isDown={NavisDown}  />
                     <NavButton name="Startups" isDown={NavisDown}  />
