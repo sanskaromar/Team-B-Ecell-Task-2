@@ -12,7 +12,7 @@ export default function FrostedCard(prop) {
 
     return (
         <>
-            <div style={cardStyle} className="p-4 m-4 text-black text-shadow-sm">
+            <div style={cardStyle} className="p-4 sm:m-4 text-black text-shadow-sm">
                 <p>{prop.content}</p>
             </div>
         </>
