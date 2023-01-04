@@ -1,0 +1,50 @@
+.EventsLayer2{
+    position: relative;
+    top: -76px;
+}
+
+.EventsLayer3{
+    position: relative;
+    top: -152px;
+}
+
+.hexagon:hover{
+    opacity: 1;
+}
+
+@media (max-width: 1023px) {
+    .EventsLayer2{
+        position: relative;
+        top: -56px;
+    }
+    
+    .EventsLayer3{
+        position: relative;
+        top: -112px;
+    }
+}
+
+@media (max-width: 639px) {
+    .EventsLayer2{
+        position: none;
+        top:0px;
+    }
+    
+    .EventsLayer3{
+        position: none;
+        top:0px;
+    }
+    
+}
+
+
+/* @media (max-width: 640px) {
+    .EventsLayer2{
+
+    }
+    
+    .EventsLayer3{
+    
+    }
+    
+} */

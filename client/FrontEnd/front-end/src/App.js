@@ -9,7 +9,6 @@ import Info from './components/independent-components/Info'
 
 import EventsToken from './components/independent-components/EventsToken';
 import AboutUs from './components/dependent-components/AboutUs';
-import Info from './components/independent-components/Info';
 import LinesofAppreciation from './components/dependent-components/LinesofAppreciation';
 
 function App() {
@@ -19,6 +18,7 @@ function App() {
       <Header background={bulbImage} />
       <AboutUs />
       <Info />
+      <Events />
       <Startup />
       <LinesofAppreciation />
     </div>

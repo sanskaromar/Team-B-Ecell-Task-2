@@ -15,6 +15,13 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .clip {
+          clip-path: polygon(0 25%,50% 0,100% 25%,100% 75%,50% 100%,0 75%);
+        }
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
