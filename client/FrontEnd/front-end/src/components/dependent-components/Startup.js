@@ -3,6 +3,17 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import StartupToken from './components/independent-components/StartupToken';
+import './Background.css';
+const logo = '/images/download.png';
+const logo1 = '/images/baabtra.png';
+const logo2 = '/images/everycrave.jfif';
+const logo3 = '/images/kratical.png';
+const logo4 = '/images/loco.png';
+const logo5 = '/images/trelos.png';
+const logo6 = '/images/pvr.jfif';
+const logo7 = '/images/symb.png';
+const logo8 = '/images/drivezy.png';
 
 const Startup = () => {
     let settings = {
@@ -28,55 +39,37 @@ const Startup = () => {
         ]
     };
     return (
-        <div className="bg-black h-[250px] pt-[10px]">
+        <div className="bg-gradient-to-l from-zinc-900 via-purple-100 to-zinc-900 h-[300px] pt-[10px]">
             <div className="justify-center items-center">
                 <h1 className="text-white font-serif text-4xl bold justify-center items-center flex max-md:text-2xl">Startups by MNNITians</h1>
             </div>
             <Carousel className="w-[100%] flex justify-center items-center" {...settings}>
                 <Wrap>
-                    <div className="mt-8 mx-[32px] flex justify-center items-center">
-                        <div className="mr-[40px] startup cursor-pointer">
-                            <div className="bg-white h-36 w-36 flex justify-center items-center rounded-full border-solid border-2 border-indigo-600">
-                                <a href="google"><img className="w-[120px]" src="/images/download.png" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    <StartupToken image={logo}/>
                 </Wrap>
                 <Wrap>
-                    <div className="mt-8 mx-[32px] flex justify-center items-center">
-                        <div className="mr-[40px] startup cursor-pointer">
-                            <div className="bg-white h-36 w-36 flex justify-center items-center rounded-full border-solid border-2 border-indigo-600">
-                                <a href="google"><img className="w-[120px]" src="/images/download.pn" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    <StartupToken image={logo1}/>
                 </Wrap>
                 <Wrap>
-                    <div className="mt-8 mx-[32px] flex justify-center items-center">
-                        <div className="mr-[40px] startup cursor-pointer">
-                            <div className="bg-white h-36 w-36 flex justify-center items-center rounded-full border-solid border-2 border-indigo-600">
-                                <a href="google"><img className="w-[120px]" src="/images/download.png" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    <StartupToken image={logo2}/>
                 </Wrap>
                 <Wrap>
-                    <div className="mt-8 mx-[32px] flex justify-center items-center">
-                        <div className="mr-[40px] startup cursor-pointer">
-                            <div className="bg-white h-36 w-36 flex justify-center items-center rounded-full border-solid border-2 border-indigo-600">
-                                <a href="google"><img className="w-[120px]" src="/images/download.png" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    <StartupToken image={logo3}/>
                 </Wrap>
                 <Wrap>
-                    <div className="mt-8 mx-[32px] flex justify-center items-center">
-                        <div className="mr-[40px] startup cursor-pointer">
-                            <div className="bg-white h-36 w-36 flex justify-center items-center rounded-full border-solid border-2 border-indigo-600">
-                                <a href="google"><img className="w-[120px]" src="/images/download.png" alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    <StartupToken image={logo4}/>
+                </Wrap>
+                <Wrap>
+                    <StartupToken image={logo5}/>
+                </Wrap>
+                <Wrap>
+                    <StartupToken image={logo6}/>
+                </Wrap>
+                <Wrap>
+                    <StartupToken image={logo7}/>
+                </Wrap>
+                <Wrap>
+                    <StartupToken image={logo8}/>
                 </Wrap>
             </Carousel>
         </div>
@@ -107,13 +100,14 @@ const Carousel = styled(Slider)`
     overflow: hidden;
   }
   .slick-prev {
-    left: 2px;
+    /* left: 200px; */
   }
   .slick-next {
     right: 20px;
   }
   .slick-track{
-    width:90vw;
+    /* width:90vw; */
+    overflow: hidden;
   }
 `;
 
