@@ -1,0 +1,24 @@
+.BackGround {
+    background: linear-gradient(270deg, #f9deb9, #d7be9d, #be7041);
+    background-size: 600% 600%;
+
+    -webkit-animation: BackGround 17s ease infinite;
+    -moz-animation: BackGround 17s ease infinite;
+    animation: BackGround 17s ease infinite;
+}
+
+@-webkit-keyframes BackGround {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackGround {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackGround { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

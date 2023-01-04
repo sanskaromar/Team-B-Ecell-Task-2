@@ -7,12 +7,14 @@ import logo from './assets/quiz.jpg';
 import bulbImage from './assets/bulbImage.jpg';
 
 import EventsToken from './components/independent-components/EventsToken';
+import AboutUs from './components/dependent-components/AboutUs';
 
 
 function App() {
   return (
     <>
       <Header background={bulbImage} />
+      <AboutUs />
     </>
   );
 }

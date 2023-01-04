@@ -2,23 +2,23 @@ import React from "react";
 
 export default function Title(prop) {
     const style = {
-        "clip-path" : "polygon(0 25%, 100% 0, 100% 100%, 10% 74%)",
-        "background-color" : "#CC8227",
+        "clipPath" : "polygon(0 25%, 100% 0, 100% 100%, 10% 74%)",
+        "backgroundColor" : "#CC8227",
         "height":"60px",
         "width":"140px",
         "display" : "flex",
-        "align-items" : "center",
-        "justify-content" : "center"
+        "alignItems" : "center",
+        "justifyContent" : "center"
     }
     const cont ={
         "display" : "flex",
-        "align-items" : "center",
-        "justify-content" : "center",
+        "alignItems" : "center",
+        "justifyContent" : "center",
         "padding" : "10px"
     }
     const head = {
         "color":"#3E240F",
-        "font-weight":"900"
+        "fontWeight":"900"
     }
 
 
