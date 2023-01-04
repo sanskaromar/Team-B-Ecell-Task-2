@@ -3,8 +3,9 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import StartupToken from './components/independent-components/StartupToken';
+import StartupToken from "../independent-components/StartupToken"
 import './Background.css';
+
 const logo = '/images/download.png';
 const logo1 = '/images/baabtra.png';
 const logo2 = '/images/everycrave.jfif';
@@ -16,7 +17,7 @@ const logo7 = '/images/symb.png';
 const logo8 = '/images/drivezy.png';
 
 const Startup = () => {
-    let settings = {
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -38,12 +39,17 @@ const Startup = () => {
           }
         ]
     };
+
+    const StartupStyle = {
+      'backgroundImage' : 'linear-gradient(rgb( 20, 20, 20), rgb( 50, 50, 50), rgb( 20, 20, 20))'
+    }
+
     return (
-        <div className="bg-gradient-to-l from-zinc-900 via-purple-100 to-zinc-900 h-[300px] pt-[10px]">
+        <div className=" from-zinc-900 via-purple-100 to-zinc-900 h-[300px] pt-4 pb-20" style={StartupStyle}>
             <div className="justify-center items-center">
                 <h1 className="text-white font-serif text-4xl bold justify-center items-center flex max-md:text-2xl">Startups by MNNITians</h1>
             </div>
-            <Carousel className="w-[100%] flex justify-center items-center" {...settings}>
+            <Carousel className="w-[100%] flex justify-center items-center p-4" {...settings}>
                 <Wrap>
                     <StartupToken image={logo}/>
                 </Wrap>

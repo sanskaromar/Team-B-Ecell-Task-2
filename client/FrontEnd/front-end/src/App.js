@@ -9,15 +9,18 @@ import Info from './components/independent-components/Info'
 
 import EventsToken from './components/independent-components/EventsToken';
 import AboutUs from './components/dependent-components/AboutUs';
-
+import Info from './components/independent-components/Info';
+import LinesofAppreciation from './components/dependent-components/LinesofAppreciation';
 
 function App() {
 
   return (
     <div>
-      {/* <Header background={bulbImage} />
-      <AboutUs /> */}
-      <Info/>
+      <Header background={bulbImage} />
+      <AboutUs />
+      <Info />
+      <Startup />
+      <LinesofAppreciation />
     </div>
   );
 }

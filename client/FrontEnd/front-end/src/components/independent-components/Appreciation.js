@@ -2,12 +2,27 @@ import React from 'react';
 import styled from "styled-components";
 
 const Appreciation = (prop) => {
+
+  const AppreciationStyle = {
+    'margin' : '40px',
+    'padding' : '10px',
+    'backgroundColor' : 'rgba(190, 127, 95, .4)',  
+    'backdropFilter' : 'blur(5px)',
+    'boxShadow' : '0px 0px 15px 3px rgba( 200, 137, 105, .60)',
+    'borderRadius' : '15px'
+  }
+
+  const ImageStyle = {
+    'borderRadius' : '15px'
+  }
+
   return (
     <Wrap>
       <div
+        style={AppreciationStyle}
         className="">
         <img
-          className="m-auto mt-2.5" src={prop.image} alt="" />
+          className="m-auto mt-2.5" src={prop.image} style={ImageStyle} alt="" />
         <div
           className="w-[70%] m-auto mt-2.5">
           <h2

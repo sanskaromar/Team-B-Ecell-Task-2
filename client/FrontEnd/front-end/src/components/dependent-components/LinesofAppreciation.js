@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import Appreciation from './components/independent-components/Appreciation';
+import Appreciation from "../independent-components/Appreciation";
+import './Background.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -20,7 +21,7 @@ const LinesofAppreciation = () => {
         autoplay: true,
     };
     return (
-        <div>
+        <div className='BackGround p-4'>
             <div
                 className="bg-[#F9F3EB] h-[450px] pt-[10px] max-md:h-[550px]">
                 <div

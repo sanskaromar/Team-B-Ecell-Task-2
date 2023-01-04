@@ -7,7 +7,7 @@ function info() {
     const data2=[ ["120+ Startups",<i class="fa-solid fa-lightbulb fa-3x text-white "></i>],
                 ["40+ Speakers",<i class="fa-solid fa-person fa-3x text-white"></i>]]
   return (
-    <div className="flex flex-col justify-center bg-black sm:flex sm:flex-row">
+    <div className="flex flex-col justify-center bg-black sm:flex sm:flex-row m-0">
         <div className="flex justify-center w-full sm:w-1/2"> 
         {data.map(([title,icon])=>(
             <div className="flex flex-col items-center w-1/2 p-8">

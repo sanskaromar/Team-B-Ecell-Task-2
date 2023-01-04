@@ -10,7 +10,7 @@ export default function StartupToken(prop) {
         'borderRadius' : '50%',
         'overflow' : 'hidden',
         'margin' : '10px',
-        'boxShadow' : '0px 0px 15px 3px #888888',
+        'boxShadow' : '0px 0px 15px 3px rgba( 0, 0, 0, .5)',
         'backgroundColor' : 'white'
     }
     
